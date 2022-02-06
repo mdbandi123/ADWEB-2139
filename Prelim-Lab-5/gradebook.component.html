@@ -1,0 +1,59 @@
+<div class="jumbotron jumbotron-fluid" [style.background-color]="bgColor">
+    <div class="container">
+      <h2 class="display-4" [style.color]="txtColor" [style.font-weight]="fontWeight"><img src={{imgUrl}}> Grade Book</h2>
+    </div>
+  </div>
+
+  <div [style.padding]="cardPadding">
+  <div class="card border-dark mb-3">
+    <div class="card-header text-center border-dark">
+      ADWEB Gradebook Calculator
+    </div>
+    <div class="card-body" >
+      <h5 class="card-title">Enter your name below:</h5>
+      <p class="card-text" [style.padding]="contentPadding"><input type="text" [(ngModel)]="studName" class= "form-control" placeholder = "Name" /></p>
+      <br>
+      <h5 class="card-title">Enter your grades below:</h5>
+      <p class="card-text" [style.padding]="contentPadding">Prelims<input type="number" [(ngModel)]="prelim" class= "form-control" placeholder = "" /></p>
+      <p class="card-text" [style.padding]="contentPadding">Midterms<input type="number" [(ngModel)]="midterm" class= "form-control" placeholder = "" /></p>
+      <p class="card-text" [style.padding]="contentPadding">Finals<input type="number" [(ngModel)]="final" class= "form-control" placeholder = "" /></p>
+
+      <p class="card-text" [style.padding]="contentPadding">Hello, {{studName}}</p>
+      <p class="card-text" [style.padding]="contentPadding">Prelims: {{prelim}}</p>
+      <p class="card-text" [style.padding]="contentPadding">Midterms: {{midterm}}</p>
+      <p class="card-text" [style.padding]="contentPadding">Finals {{final}}</p>
+
+      <p class="card-text" [style.padding]="contentPadding">Average: {{(prelim+midterm+final)/3}}</p>
+    
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+  </div>
+</div>
+
+<div [style.padding]="cardPadding">
+    <div class="card border-dark mb-3">
+      <div class="card-header text-center border-dark">
+        CLOUDCOMP Gradebook Calculator
+      </div>
+      <div class="card-body" >
+        <h5 class="card-title">Enter your name below:</h5>
+        <p class="card-text" [style.padding]="contentPadding"><input type="text" [(ngModel)]="studName_2" class= "form-control" placeholder = "Name" /></p>
+        <br>
+        <h5 class="card-title">Enter your grades below:</h5>
+        <p class="card-text" [style.padding]="contentPadding">Prelims<input type="number" [(ngModel)]="prelim_2" class= "form-control" placeholder = "" /></p>
+        <p class="card-text" [style.padding]="contentPadding">Midterms<input type="number" [(ngModel)]="midterm_2" class= "form-control" placeholder = "" /></p>
+        <p class="card-text" [style.padding]="contentPadding">Finals<input type="number" [(ngModel)]="final_2" class= "form-control" placeholder = "" /></p>
+  
+        <p class="card-text" [style.padding]="contentPadding">Hello, {{studName_2}}</p>
+        <p class="card-text" [style.padding]="contentPadding">Prelims: {{prelim_2}}</p>
+        <p class="card-text" [style.padding]="contentPadding">Midterms: {{midterm_2}}</p>
+        <p class="card-text" [style.padding]="contentPadding">Finals {{final_2}}</p>
+  
+        <p class="card-text" [style.padding]="contentPadding">Average: {{(prelim_2+midterm_2+final_2)/3}}</p>
+      
+      </div>
+      <div class="card-footer text-muted">
+      </div>
+    </div>
+  </div>
