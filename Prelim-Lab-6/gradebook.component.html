@@ -1,0 +1,74 @@
+
+<!--ngIf-->
+<h2>ngIf</h2>
+<div *ngIf=true>MD Sumang (WD-302)</div>
+<div *ngIf=false>This text will not print</div>
+
+<!--ngIfElse-->
+
+<h2>ngIfElse</h2>
+<div *ngIf="isLogIn; else isLogOut">Hello you are logged in</div>
+<ng-template #isLogOut>You're logged out...</ng-template>
+
+<br>
+
+<div *ngIf="false; else isLogOut">Hello you are logged in</div>
+<ng-template #isLogOut>You're logged out...</ng-template>
+
+<br>
+
+<!--ngFor-->
+
+<h2>ngFor</h2>
+
+<ul>
+    <li *ngFor="let i of list">{{i}}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let j of studentArr trackBy: trackByData">{{j.name}}</li>
+</ul>
+
+<table class="table table-striped table-bordered" border = "1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let k of staff">
+            <td>{{k.firstName}} {{k.lastName}}</td>
+            <td>{{k.email}}</td>
+            <td>{{k.role}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--ngSwitch-->
+<h2>ngSwitch</h2>
+<ul [ngSwitch]="logInName">
+    <li *ngSwitchCase="'user'"><p>User is logged in</p></li>
+    <li *ngSwitchCase="'admin'"><p>Admin is logged in</p></li>
+    <li *ngSwitchDefault><p>Please choose login name</p></li>
+</ul>
+
+<ul [ngSwitch]="logInName2">
+    <li *ngSwitchCase="'user'"><p>User is logged in</p></li>
+    <li *ngSwitchCase="'admin'"><p>Admin is logged in</p></li>
+    <li *ngSwitchDefault><p>Please choose login name</p></li>
+</ul>
+
+<ul [ngSwitch]="'test'">
+    <li *ngSwitchCase="'user'"><p>User is logged in</p></li>
+    <li *ngSwitchCase="'admin'"><p>Admin is logged in</p></li>
+    <li *ngSwitchDefault><p>Please choose login name</p></li>
+</ul>
+
+
+
+
+
+
+
