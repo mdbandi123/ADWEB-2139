@@ -1,0 +1,37 @@
+<!--String Interpolation-->
+<h2>String Interpolation</h2>
+<p>Hello! I am: {{interString}}</p>
+<br>
+
+<!--Style Binding-->
+<h2>Style Binding</h2>
+<p [style.color]="myColor">Sample text for style binding example</p>
+<br>
+
+<!--Property Binding-->
+<h2>Property Binding</h2>
+<input type="text" [value]="clientName">
+<br><br>
+
+<!--Class Binding-->
+<h2>Class Binding</h2>
+<p [class]="appliedCSSClass">Sample text for class binding</p>
+<p [class.blue]="yesColor">Sample text for class binding (true)</p>
+<p [class.blue]="noColor">Sample text for class binding (false)</p>
+<br>
+
+<!--Event Binding-->
+<h2>Event Binding</h2>
+<button (click)="showData($event)">Click Me</button>
+<br><br>
+<button on-click="showData($event)">Click Me</button>
+<br><br><br>
+
+
+<input type="text" #keyupbox placeholder="keyup box" (keyup)="getData(keyupbox.value)"/>
+<br><br>
+<input type="text" #keyinputbox placeholder="input box" (input)="getData(keyinputbox.value)"/>
+<br><br>
+<input type="text" #keydownbox placeholder="keydownbox" (keydown)="getData(keydownbox.value)"/>
+<br><br>
+<input type="text" #keyblurbox placeholder="blur box" (blur)="getData(keyblurbox.value)"/>
