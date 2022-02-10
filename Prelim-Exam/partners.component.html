@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="partners.component.css">
+
+<div class="partners-header">
+    <h1 [style.font-weight]="fontWeight1">{{partnerHeader}}</h1>
+</div>
+
+<div class="partners-table">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Company</th>
+            <th scope="col">Trademark</th>
+            <th scope="col">Sponsorship</th>
+            <th scope="col">Go to Website</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of partners">
+            <td scope="row">{{i.company}}</td>
+            <td><img src="{{i.trademark}}" [style.max-width]="cardImgX" [style.max-height]="cardImgY" ></td>
+            <td>{{i.sponsorship}}</td>
+            <td><a href={{i.site}}>{{button}}</a></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

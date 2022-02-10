@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="join-us.component.css">
+
+<div class="join-us">
+    <div class="join-content">
+        <h1 [style.font-weight]="fontWeight1">Fill the form below:</h1>
+        <br>
+        <p>Firstname: <input type="text" [(ngModel)]="firstName"> Lastname: <input type="text" [(ngModel)]="lastName"></p>
+        <p>Fullname: {{firstName}} {{lastName}}</p>
+        <p>Enter Email Address: <input type="text" [(ngModel)]="email"></p>
+        <p>Email: {{email}}</p>
+        <p>Enter Institution/Affiliation: <input type="text" [(ngModel)]="insti"></p>
+        <p>Academic Institution: {{insti}}</p>
+    </div>
+
+
+    
+</div>

@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="home.component.css">
+
+<div class="header" style="background-image: url(assets/img/chicago-header.jpg);">
+
+    <div class="jumbotron">
+        <h1 class="display-4" [style.font-weight]="fontWeight1">{{lineOne}}</h1>
+        <h3 class="display-6" [style.font-weight]="fontWeight1">{{lineTwo}}</h3>
+        <p class="lead">
+          <a class="btn" style="border: 1px solid black ;" href="#" role="button">{{lineButton}}</a>
+        </p>
+      </div>
+</div>
+
+
+<div class="cards-header">
+    
+    <h1 id="card-text" [style.font-weight]="fontWeight1">{{cardHeader}}</h1>
+    <hr>
+</div>
+
+<div class="card-content">
+    <div class="card" style="width: 18rem;"> 
+        <img class="card-img-top" src="{{france}}" alt="france card" [style.max-height]="cardImgY">
+        <div class="card-body">
+          <h5 class="card-title">France</h5>
+          <p class="card-text">The largest country in Western Europe, has long been a gateway beetween the continent's northern and southern regions.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Architecture and Fine Arts</li>
+          <li class="list-group-item">Cultural Events</li>
+          <li class="list-group-item">Safety and Security</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">{{button}}</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{seoul}}" alt="seoul card" [style.max-height]="cardImgY">
+        <div class="card-body">
+          <h5 class="card-title">Seoul</h5>
+          <p class="card-text"> Korean Sŏul, formally Sŏul-t’ŭkpyŏlsi (“Special City of Seoul”), city and capital of South Korea (the Republic of Korea). </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Humanities and Arts</li>
+          <li class="list-group-item">Cultural Events</li>
+          <li class="list-group-item">Safety and Security</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">{{button}}</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{sf}}" alt="sf card" [style.max-height]="cardImgY">
+        <div class="card-body">
+          <h5 class="card-title">San Francisco</h5>
+          <p class="card-text">It is a cultural and financial centre of the western United States and one of the country's most cosmpolitan cities</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Science and Technology</li>
+          <li class="list-group-item">Cultural Events</li>
+          <li class="list-group-item">Safety and Security</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">{{button}}</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{boston}}" alt="boston card" [style.max-height]="cardImgY">
+        <div class="card-body">
+          <h5 class="card-title">Boston</h5>
+          <p class="card-text">Best known for its famouse bakes beans, Fenway Park, The Boston Marathon, and of course for the bar from Cheers.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Engineeering and Tech</li>
+          <li class="list-group-item">Cultural Events</li>
+          <li class="list-group-item">Safety and Security</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">{{button}}</a>
+        </div>
+      </div>
+</div>
