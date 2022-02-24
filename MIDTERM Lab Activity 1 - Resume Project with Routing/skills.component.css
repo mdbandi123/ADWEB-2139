@@ -1,0 +1,31 @@
+body{
+    max-width: 100vw;
+    height: 100vh;
+    background-color:  #141616;
+ 
+
+}
+
+.educ{
+    padding-top: 4em;
+    display: grid;
+    margin: 0 auto;
+}
+
+p{
+    color: white;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+.skills{
+    padding-top: 4em;
+    display: grid;
+    margin: 0 auto;
+}
+
+.subHeads{
+    color: #75e6da;
+    font-size: 2em;
+}

@@ -1,0 +1,39 @@
+body{
+    max-width: 100vw;
+    height: 100vh;
+    background-color:  #141616;
+   
+}
+
+img{
+    height: 120px;
+}
+p{
+    color: white;
+    font-size: 2em;
+}
+
+section {
+    padding-top: 18em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section .footer-left {
+    padding-bottom: 4em;
+    padding-left: 15em;
+  }
+  section .footer-right {
+    padding-top: 7.5em;
+    padding-right: 15em;
+  }
+  section .footer-right img {
+    height: 90px;
+  }
+
+  .contact-information{
+      color:#75e6da;
+  }
