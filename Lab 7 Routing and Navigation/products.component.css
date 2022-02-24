@@ -1,0 +1,31 @@
+h2{
+    text-align: center;
+   padding-top: 1em;
+   font-size: 4em;
+   font-weight: bold ;
+   background-color: rgb(193, 230, 182);
+   padding-bottom: 1em;
+}
+
+section{
+    
+    margin-top: 4em;
+    
+}
+
+table{
+    margin: 0 auto;
+}
+
+td{
+    padding: 2em;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+}
+
+.card-text1, .card-text{
+    text-align: center;
+}
