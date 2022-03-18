@@ -1,0 +1,9 @@
+h1, table
+{
+    text-align: center;
+    padding: 1em;
+}
+
+th{
+    background-color: rgb(136, 181, 248);
+}
